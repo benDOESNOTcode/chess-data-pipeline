@@ -1,0 +1,4 @@
+.venv/
+__pycache__/
+chess_dbt/target/
+chess_dbt/dbt_packages/

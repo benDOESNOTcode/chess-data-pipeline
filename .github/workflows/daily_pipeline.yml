@@ -1,0 +1,39 @@
+name: Daily Chess Pipeline
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch: 
+
+permissions:
+  contents: write
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install dbt-duckdb
+
+      - name: Step 1 - Extract Raw Data from Chess.com
+        run: python load_to_duckdb.py
+
+      - name: Step 2 - Run dbt Transformations
+        run: |
+          cd chess_dbt
+          dbt run --profiles-dir .
+
+      - name: Step 3 - Commit Database Back to Repository
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated daily data extraction and dbt run"

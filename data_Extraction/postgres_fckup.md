@@ -1,0 +1,4 @@
+
+
+$env:CURL_CA_BUNDLE=""
+$env:REQUESTS_CA_BUNDLE=""

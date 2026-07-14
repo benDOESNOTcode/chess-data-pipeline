@@ -1,0 +1,146 @@
+[0m16:19:08.505237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019458E488B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019459D9BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019459D9BFA0>]}
+
+
+============================== 16:19:08.517259 | 3393088c-d4c8-456d-b467-a0e45425d302 ==============================
+[0m16:19:08.517259 [info ] [MainThread]: Running with dbt=1.11.12
+[0m16:19:08.518279 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\benie\\.dbt', 'invocation_command': 'dbt init chess_dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:19:08.754967 [debug] [MainThread]: Starter project path: E:\VsCode\pyth\chess_data_pipeline\.venv\lib\site-packages\dbt\include\starter_project
+[0m16:19:08.890386 [info ] [MainThread]: 
+Your new dbt project "chess_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:19:08.892225 [info ] [MainThread]: Setting up your profile.
+[0m16:19:24.872738 [debug] [MainThread]: Command `dbt init` succeeded at 16:19:24.872104 after 16.52 seconds
+[0m16:19:24.873735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019458E488B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019459D98130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019459B221D0>]}
+[0m16:19:24.875289 [debug] [MainThread]: Flushing usage events
+[0m16:19:25.572823 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:30:12.597284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEE7E44970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEE9DE83D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEE9DE81F0>]}
+
+
+============================== 16:30:12.601814 | 339ffe8c-7219-4f1c-ab24-555e6aa53c71 ==============================
+[0m16:30:12.601814 [info ] [MainThread]: Running with dbt=1.11.12
+[0m16:30:12.603343 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\benie\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run --select stg_chess_games', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:30:12.604860 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\VsCode\pyth\chess_data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:30:12.606365 [debug] [MainThread]: Command `dbt run` failed at 16:30:12.606365 after 0.15 seconds
+[0m16:30:12.607362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEE7E44970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEE9DE8490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEE9DE85E0>]}
+[0m16:30:12.607861 [debug] [MainThread]: Flushing usage events
+[0m16:30:13.641198 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:01:29.948496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A83144970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A850E83D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A850E81F0>]}
+
+
+============================== 17:01:29.953013 | 2c49ce84-9de1-414e-b03a-323bb98437ab ==============================
+[0m17:01:29.953013 [info ] [MainThread]: Running with dbt=1.11.12
+[0m17:01:29.954525 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\benie\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select stg_chess_games', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m17:01:29.955040 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\VsCode\pyth\chess_data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:01:29.957069 [debug] [MainThread]: Command `dbt run` failed at 17:01:29.956572 after 0.13 seconds
+[0m17:01:29.957553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A83144970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A850E8490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A850E85E0>]}
+[0m17:01:29.958102 [debug] [MainThread]: Flushing usage events
+[0m17:01:29.963660 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:00:16.686632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185665C49D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185685E0400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185685E0220>]}
+
+
+============================== 18:00:16.695470 | bbfff546-74ec-4763-8a48-0be47ea93f20 ==============================
+[0m18:00:16.695470 [info ] [MainThread]: Running with dbt=1.11.12
+[0m18:00:16.696982 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\benie\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt seed', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m18:00:16.698033 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\VsCode\pyth\chess_data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:00:16.699488 [debug] [MainThread]: Command `dbt seed` failed at 18:00:16.699488 after 0.19 seconds
+[0m18:00:16.700484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185665C49D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185685E04C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185685E0610>]}
+[0m18:00:16.700989 [debug] [MainThread]: Flushing usage events
+[0m18:00:16.706623 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:52:14.414790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD6F489D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD7EA4280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD7EA40A0>]}
+
+
+============================== 21:52:14.424392 | ba6af9cc-6a76-4e9e-be1b-e58a0b692597 ==============================
+[0m21:52:14.424392 [info ] [MainThread]: Running with dbt=1.11.12
+[0m21:52:14.425898 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\benie\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init chess_dbt', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:52:14.464046 [debug] [MainThread]: Starter project path: E:\VsCode\pyth\chess_data_pipeline\.venv\lib\site-packages\dbt\include\starter_project
+[0m21:52:14.488230 [info ] [MainThread]: 
+Your new dbt project "chess_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:52:14.489744 [info ] [MainThread]: Setting up your profile.
+[0m21:54:30.705572 [debug] [MainThread]: Command `dbt init` succeeded at 21:54:30.705073 after 136.45 seconds
+[0m21:54:30.706071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD6F489D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD7DCB7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AAD7EA7D90>]}
+[0m21:54:30.707072 [debug] [MainThread]: Flushing usage events
+[0m21:54:30.712656 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:14:18.747638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C9C1A89D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C9E1F03D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C9E1F01F0>]}
+
+
+============================== 22:14:18.770401 | 021a95d2-ced2-4d8b-818f-432faaadd465 ==============================
+[0m22:14:18.770401 [info ] [MainThread]: Running with dbt=1.11.12
+[0m22:14:18.772962 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\benie\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt show --select stg_raw_games', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:14:18.774482 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\VsCode\pyth\chess_data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:14:18.776549 [debug] [MainThread]: Command `dbt show` failed at 22:14:18.776549 after 0.26 seconds
+[0m22:14:18.783515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C9C1A89D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C9E1F04C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014C9E1F0490>]}
+[0m22:14:18.791785 [debug] [MainThread]: Flushing usage events
+[0m22:14:18.800399 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:06:27.914166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024493A4C940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244959F0370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244959F0190>]}
+
+
+============================== 14:06:27.931068 | 0a7e60dc-52d5-40a5-94be-19a857cf6a94 ==============================
+[0m14:06:27.931068 [info ] [MainThread]: Running with dbt=1.11.12
+[0m14:06:27.932056 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\benie\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt show --select stg_raw_games', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m14:06:27.933552 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\VsCode\pyth\chess_data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:06:27.935131 [debug] [MainThread]: Command `dbt show` failed at 14:06:27.935131 after 0.18 seconds
+[0m14:06:27.935625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024493A4C940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244959F0460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244959F0430>]}
+[0m14:06:27.938274 [debug] [MainThread]: Flushing usage events
+[0m14:06:27.944612 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:39:21.610600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30A3A89A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30C3F03D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30C3F01F0>]}
+
+
+============================== 15:39:21.624592 | 6d88d16f-ecb7-41d9-81b0-bfb182a32791 ==============================
+[0m15:39:21.624592 [info ] [MainThread]: Running with dbt=1.11.12
+[0m15:39:21.626290 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\benie\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select fact_games --full-refresh', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:39:21.627904 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\VsCode\pyth\chess_data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:39:21.629405 [debug] [MainThread]: Command `dbt run` failed at 15:39:21.629405 after 0.16 seconds
+[0m15:39:21.629905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30A3A89A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30C3F04C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30C3F0490>]}
+[0m15:39:21.630905 [debug] [MainThread]: Flushing usage events
+[0m15:39:21.634177 [debug] [MainThread]: An error was encountered while trying to flush usage events
