@@ -23,8 +23,7 @@ con.execute("SET SCHEMA 'raw'")
 con.execute("""
     CREATE OR REPLACE VIEW raw.games AS 
     SELECT * 
-    FROM read_parquet(
-        '{parquet_path}', 
+    FROM read_parquet('chess_dbt/data/games/date=*/*.parquet'), 
         hive_partitioning=1, 
         union_by_name=True
     )
