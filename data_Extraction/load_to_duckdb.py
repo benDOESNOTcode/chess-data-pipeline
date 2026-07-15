@@ -7,7 +7,7 @@ import duckdb
 ############
 project_root = Path(__file__).resolve().parents[1]
 db_path = project_root / "chess_dbt" / "dev.duckdb"
-parquet_pattern = project_root / "data" / "games" / "date=*" / "*.parquet"
+parquet_pattern = project_root / "chess_dbt" / "data" / "games" / "date=*" / "*.parquet"
 
 con = duckdb.connect(str(db_path))
 
