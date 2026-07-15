@@ -20,13 +20,18 @@ con.execute("SET SCHEMA 'raw'")
 ############
 #Block C: Magic Window with rules
 ############
-con.execute("""
+# Note the {parquet_path} placeholder inside the string
+query = """
     CREATE OR REPLACE VIEW raw.games AS 
     SELECT * 
-    FROM read_parquet('chess_dbt/data/games/date=*/*.parquet'), 
+    FROM read_parquet(
+        '{parquet_path}', 
         hive_partitioning=1, 
         union_by_name=True
     )
-""".format(parquet_path=parquet_pattern.as_posix()))
+"""
+
+# Now the .format() fills in the placeholder
+con.execute(query.format(parquet_path=parquet_pattern.as_posix()))
 
 print("Successfully created the 'raw.games' view with Hive Partitioning and Union-by-Name")
